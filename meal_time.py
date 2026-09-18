@@ -1,8 +1,8 @@
 def convert(time):
-         parts = time.split(":")
-         hour = int(parts[0])
-         minute = int(parts[1])
-         return float(hour + (minute / 60))
+    parts = time.split(":")
+    hour = int(parts[0])
+    minute = int(parts[1])
+    return float(hour + (minute / 60))
     
 def meal_time():
     time_hm = input("What time is it?")
