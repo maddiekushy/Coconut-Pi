@@ -11,7 +11,7 @@ elif op == "-":
     result = num1 - num2
 elif op == "/":
     result = num1 / num2
-elif op == "*":
+else op == "*":
     result = num1 * num2
 
 print(result)
