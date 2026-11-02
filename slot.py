@@ -1,5 +1,7 @@
 from gpiozero import Button
 from signal import pause
+import board
+import digitalio
 
 def ():
 print("Hello!")
