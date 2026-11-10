@@ -17,39 +17,18 @@ button1.when_released = led.off
 
 def rig_display():
         digit = random.choice("123456789")
-
         same_digit_number = int(digit * 4)
-
-        print(same_digit_number)
-
-
+        formatted_rig = (f"{same_digit_number}")
+        print(f"Generated Number: {same_digit_number})
+        display.show(same_digit_number)
+        
 def generate_and_display():
         random_number = random.randint(0, 9999)
-
-        formatted_str = f"{random_number:04d}"
-
+        formatted_str = (f"{random_number:04d}")
         print(f"Generated Number: {formatted_str}")
-
         display.show(formatted_str)
 
-last_state = 0
+button1.when_pressed = generate_and_display
+button2.when_pressed = rig_display
 
-print("Press the button to generate a random 4-digit number...")
-
-while True:
-        current_state = button1.value
-
-        if last_state == 1 and current_state == 0:
-                generate_and_display()
-
-                time.sleep(0.3)
-
-        last_state = current_state
-        time.sleep(0.05)
-
-while True:
-        current_state = button2.value
-
-        if
-
-
+pause()
